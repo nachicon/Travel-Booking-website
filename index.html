@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Booking website</title>
+</head>
+
+<body>
+    <header>
+        <h1>TravelX</h1>
+        <h2>Book your trip</h2>
+        <i>Fill in the form mentioned below</i>
+        <nav>
+            <h3>For any issue contact with us</h3>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <form action="./submit.php">
+            <div>
+                <label for="Name">Name</label>
+                <input id="Name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" maxlength="10" type="tel" placeholder="Enter your contact number" required>
+            </div>
+            <div>
+                <label for="gmail">Email</label>
+                <input id="gmail" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" minlength="8" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input id="dob" name="dob" type="date" required>
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div>
+                <p>Subscription Plan</p>
+                <input id="Basic" type="radio" name="Subscription" value="Basic" required>
+                <label for="Basic">Basic</label>
+
+                <input type="radio" id="Premium" name="Subscription" value="Premium">
+                <label for="Premium">Premium</label>
+
+                <input type="radio" id="VIP" name="Subscription" value="VIP">
+                <label for="VIP">VIP</label>
+            </div>
+            <div>
+                <input id="terms" type="checkbox" name="checkbox" required>
+                <label for="terms">I agree with all terms and conditions</label>
+            </div>
+
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" placeholder="Enter your comments" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2026 Travel booking.All rights reserved
+    </footer>
+</body>
+
+</html>
