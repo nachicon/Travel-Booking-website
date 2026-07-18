@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel-Booking website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header class="head">
         <h1>TravelX</h1>
-        <h2>Book your trip</h2>
-        <i>Fill in the form mentioned below</i>
+        <h2>Book Your Trip</h2>
+        <p>Fill in the form below to book your trip.</p>
+
         <nav>
-            <h3>For any issue contact with us</h3>
             <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
         </nav>
+
+        <p>
+            <span>Need help?</span> 
+            Contact us anytime.
+        </p>
     </header>
     <main>
         <form action="./submit.php">
@@ -27,7 +33,8 @@
             </div>
             <div>
                 <label for="phone">Phone</label>
-                <input id="phone" name="phone" maxlength="10" type="tel" placeholder="Enter your contact number" required>
+                <input id="phone" name="phone" maxlength="10" type="tel" placeholder="Enter your contact number"
+                    required>
             </div>
             <div>
                 <label for="gmail">Email</label>
@@ -35,7 +42,8 @@
             </div>
             <div>
                 <label for="password">Password</label>
-                <input id="password" name="password" type="password" minlength="8" placeholder="Enter your password" required>
+                <input id="password" name="password" type="password" minlength="8" placeholder="Enter your password"
+                    required>
             </div>
             <div>
                 <label for="dob">Date of Birth</label>
